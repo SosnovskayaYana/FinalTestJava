@@ -150,7 +150,7 @@ public class Main {
     }
 
     private static LinkedList<String> pullOutToys(LinkedList<String> winnerList) {
-        try (FileWriter fw = new FileWriter("Toys.txt", true)) {
+        try (FileWriter fw = new FileWriter("toysShop/toys.txt", true)) {
             fw.write(winnerList.getLast());
             fw.append("\n");
             fw.flush();
